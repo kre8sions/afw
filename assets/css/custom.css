@@ -1,0 +1,568 @@
+@import "./newMissionsAvailable.css";
+@import "./megaMenu.css";
+
+.main-logo {
+  max-width: 90px;
+}
+
+.main-header-left {
+  max-width: 225px;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+.select2-container--default .select2-selection--single {
+  border-radius: 4px;
+}
+
+.select2-container--open .select2-dropdown--below {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  top: 0;
+}
+
+.tabs-style-3 {
+  border: none;
+  padding: 0;
+
+}
+
+.modal-body .select2-container--default {
+  z-index: 2000;
+}
+
+body {
+  overscroll-behavior: none;
+}
+
+/* Custom Gauge  */
+.preference-ring {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+table.available-missions-widget {
+  max-width: 1280px;
+}
+
+ul#flightChecklist,
+ul#reminders {
+  list-style: none;
+}
+
+.missionLeg {
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+}
+
+.missionOffer {
+  border-radius: 100px !important;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 4px;
+  box-shadow: 0 4px 25px rgba(31, 95, 175, 10%);
+  border: 1px solid #E9EDF4;
+  margin-bottom: 16px;
+}
+
+.legCount {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.legCaption {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  color: #737688;
+}
+
+button.acceptMission {
+  color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  border: none;
+}
+
+button.acceptMission:hover {
+  background-color: #2571D0 !important;
+}
+
+.missionDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.details i {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.middleRoutes {
+  color: #B0B7C7;
+}
+
+.missionDistance {
+  color: #737688;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.missionOffersContainer,
+.remindersContainer,
+.checklistContainer,
+.availableMissions {
+  max-height: 440px;
+  overflow: auto;
+
+}
+
+.affirmation-body {
+  overflow: auto;
+  max-height: 450px;
+}
+
+.table.myflight td,
+.table.myflight th {
+  border-right: 0;
+
+}
+
+.flight-card {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr) repeat(2, 1fr);
+  ;
+  grid-template-rows: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+
+}
+
+@media (max-width: 992px) {
+  .flight-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .flight-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.dropdown-menu li {
+  margin: 8px 0;
+}
+
+.missionReportDetail {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+}
+
+.volunteer-thread {
+  height: 400px;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.thread {
+  margin: 16px 0;
+}
+
+.thread-message {
+  padding: 16px;
+  border: 1px solid #dee3f0;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.thread-person {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.thread-date {
+  font-size: 14px;
+  color: #737688;
+}
+
+.thread-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.message {
+  font-size: 1rem;
+}
+
+.print-logo {
+  width: 100px;
+  mix-blend-mode: darken;
+}
+
+.itinerary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+.itinerary-table {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 8px;
+}
+
+
+@media screen and (min-width: 540px) {
+  .itinerary-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .itinerary-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 8px;
+  }
+
+  .itinerary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .itinerary-table {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 8px;
+  }
+}
+
+@media print {
+  .itinerary-table {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 8px;
+  }
+
+  .itinerary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+}
+
+.missions {
+  overflow: auto;
+}
+
+.event-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.mission-card {
+
+  margin-bottom: 32px;
+}
+
+.mission-card-body {
+  max-height: 400px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+.mission-legs {
+  padding: 16px;
+  grid-area: 1/1/-1/8;
+  overflow: auto;
+}
+
+.mission-card-leg {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+.mission-details {
+  grid-area: 1/8/-1/-1;
+  overflow: auto;
+}
+
+.preference-ring-alt {
+  width: 24px;
+}
+
+.sigBox {
+  width: 100%;
+  height: 150px;
+  border: 1px solid black;
+}
+
+#waiver-card,
+#mission-report-card,
+#member-roster-form {
+  max-width: 1024px;
+}
+
+#map-area {
+  background-color: #737688;
+  height: 600px;
+  width: 100%;
+}
+
+.dividerCircle1 {
+  height: 30px;
+  width: 30px;
+  background-color: #f3f7fd;
+  z-index: 2;
+}
+
+.dividerCircle2 {
+  height: 30px;
+  width: 30px;
+  background-color: #f3f7fd;
+}
+
+.dottedDivider {
+  height: 1px;
+  display: flex;
+  align-items: center;
+  margin: 0 -15px;
+}
+
+.dashedLine {
+  height: 1px;
+  width: calc(100% + 30px);
+  border-top: 1px dashed #B0B7C7;
+}
+
+.borderTop {
+  height: 2px;
+  width: 100%;
+  background-color: #2571D0;
+}
+
+.upcoming {
+  overflow: hidden;
+  border: none;
+}
+
+/* table */
+
+
+table.shifts-table {
+  display: flex;
+  border-collapse: collapse;
+}
+
+table.shifts-table thead {
+  display: none;
+}
+
+table.shifts-table tbody {
+  width: 100%;
+}
+
+table.shifts-table tr {
+  vertical-align: top;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+table.shifts-table tr td {
+  border-left: 1px solid #B0B7C7;
+  border-right: 1px solid #B0B7C7;
+}
+
+table.shifts-table tr td:first-child {
+  border-top: 1px solid #B0B7C7;
+  border-radius: 8px 8px 0 0;
+}
+
+table.shifts-table tr td:last-child {
+  border-bottom: 1px solid #B0B7C7;
+  border-radius: 0 0 8px 8px;
+}
+
+table.shifts-table td,
+table.shifts-table th {
+  padding: 8px;
+}
+
+table.shifts-table td:before {
+  content: attr(data-title);
+  font-size: 12px;
+  font-weight: 400;
+  color: #737688;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  margin-bottom: 4px;
+}
+
+
+@media screen and (min-width: 600px) {
+
+  .table-container {
+    overflow: auto;
+  }
+
+  table.shifts-table {
+    display: table;
+    width: 100%;
+    min-width: 1100px;
+    border-collapse: collapse;
+  }
+
+  table.shifts-table thead {
+    display: table-header-group;
+    text-align: left;
+  }
+
+  table.shifts-table tr {
+    display: table-row;
+    margin-bottom: auto;
+    border: 1px solid #B0B7C7;
+
+  }
+
+  table.shifts-table tr td:first-child,
+  table.shifts-table tr td:last-child,
+  table.shifts-table tr td {
+    border: none;
+    border-radius: 0;
+  }
+
+  table.shifts-table tr td:before {
+    display: none;
+  }
+
+}
+
+.flight-info-grid {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  row-gap: 16px;
+  max-width: 640px;
+
+}
+
+.flight-info-detail {
+  display: grid;
+  row-gap: 4px;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-column-start: 1;
+}
+
+@media screen and (min-width: 900px) {
+  .flight-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-self: center;
+
+  }
+
+  .flight-info-detail {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-end: -1;
+  }
+}
+
+.feedbackGridRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 16px;
+}
+
+.cancelled > * {
+  text-decoration: line-through;
+  opacity: 50%;
+}
+
+.recent-activity{
+  max-height:240px;
+  overflow-y: scroll;
+}
+
+.welcome-bg{
+  background-color: #D3CFCA;
+}
+.passenger.main-content{
+  background-color: #b8b5b0 !important;
+}
+.passenger.main-header{
+  border-bottom: 1px solid black !important;
+}
+.passenger.app-sidebar{
+background-color: #374B52 !important;
+color: #D3CFCA !important;
+border-right: 1px solid black !important;
+}
+.passenger.app-sidebar label {
+  color: #b8b5b0 !important;
+}
+.passenger.app-sidebar a:hover,
+.passenger div ul .side-menu__item.active:hover,
+.passenger div ul .side-menu__item.active:hover .side-menu__icon{
+  color: rgb(122, 162, 237) !important;
+  background-color: transparent !important;
+}
+.passenger div ul .side-menu__item {
+  color: #B0B7C7 !important;
+}
+.passenger div ul .side-menu__item.active{
+  color: rgb(122, 162, 237) !important;
+}
+.main-toggle.yesno span::before{
+  content: 'Yes';
+}
+.main-toggle.yesno span::after{
+  content: 'No';
+}
